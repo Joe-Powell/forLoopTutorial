@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <button>1</button>
+    <button>2</button>
+    <button>3</button>
+    <button>4</button>
+    <button>5</button>
+
+    <a href='index.html'>Refresh</a>
+
+    <p id="landingArray"></p>
+
+
+    <script>
+        let btns = document.querySelectorAll('button');
+        console.log(btns);
+
+        for (let i = 0; i < btns.length; i++) {
+            btns[i].addEventListener('click', () => {
+                btns[i].style.background = 'blue';
+                btns[i].style.color = 'white';
+
+            })
+
+
+        }
+
+
+
+        let nums = ["one", "two", "three", "four", "five"];
+        let string = '';
+        for (let i = 0; i < nums.length; i++) {
+
+            string += `${nums[i]}`;
+
+
+
+        }
+        document.getElementById('landingArray').innerHTML = string;
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
